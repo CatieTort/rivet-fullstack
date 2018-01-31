@@ -4,16 +4,16 @@ import { Link } from 'react-router-dom';
 
 class Sidebar extends Component {
 
+
+
   render(){
 
     return(
       <div className="side-container">
-          <h2><u>Pages</u></h2>
+          <h2>Pages</h2>
+          <hr />
               <ul>
-                <li key={page.id}>
-                  <Link to={`/pages/${page.id}`} >
-                    {page.rivet_type}
-                  </Link>
+                <li>
                 </li>
               </ul>
             <Button className="button">Create Page</Button>
