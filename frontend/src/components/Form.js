@@ -8,16 +8,16 @@ import {
   Row
 } from 'react-bootstrap'
 
- const { rivet, content } = this.props
 
-class NewPage extends Component {
+
+class Form extends Component {
   constructor(props){
     super(props)
 
     this.state = {
       form: {
-        rivet_type: rivet.rivet_type || '',
-        content: content.content || ''
+        rivet_type: this.props.rivet.rivet_type || '',
+        content: this.props.content.content || ''
       }
     }
   }
@@ -84,4 +84,4 @@ class NewPage extends Component {
   }
 }
 
-export default NewPage;
+export default Form;
