@@ -9,8 +9,7 @@ class Sidebar extends Component {
     }
 
     render() {
-        console.log("props", this.props);
-        const { id, rivet_type } = this.props.page;
+        const {id, rivet_type} = this.props.pages;
 
         return(
             <div className="side-container">
@@ -18,7 +17,7 @@ class Sidebar extends Component {
                 <hr />
                     <ul>
                         <li key={id}>
-                            <Link to={`/pages/${id}`}>{rivet_type}</Link>
+                            <Link to={{pathname: `/pages/${id}`}}>{rivet_type}</Link>
                         </li>
                     </ul>
                 <Button className="button">Create Page</Button>
