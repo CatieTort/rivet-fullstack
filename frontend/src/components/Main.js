@@ -39,8 +39,8 @@ class Main extends Component{
 						<Route exact path="/pages/" render={() =>
 							<Content pages={this.state.pages}/>}
 						/>
-						<Route path="/pages/:id" render={() =>
-							<Page pages={this.state.pages}/>}
+						<Route path="/pages/:id" render={(props) =>
+							<Page pages={this.state.pages} id={parseInt(props.match.params.id)}/>}
 						/>
 					</Switch>
 				</Router>

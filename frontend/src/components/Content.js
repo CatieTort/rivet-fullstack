@@ -5,16 +5,18 @@ import ("../stylesheets/bootstrap.flatly.min.css");
 
     class Content extends Component {
         render(){
-            console.log(this.props);
+            // console.log(this.props);
             return(
                 <div>
                     {this.props.pages.map((page, index) => {
                             return (
                             <div className="card border-primary mb-3">
-                                <div className="card-body text-primary" key={index}>
-                                    <h4 className="card-title">{page.rivet_type}</h4>
-                                    <p className="card-text">{page.content}</p>
-                                </div>
+                                    <div className="card-body text-primary" key={index}>
+                                        <Link to={`/pages/${page.id}`}  style={{ textDecoration: 'none' }}>
+                                            <h4 className="card-title">{page.rivet_type}</h4>
+                                        </Link>
+                                        <p className="card-text">{page.content}</p>
+                                    </div>
                             </div>
                             )
                         })

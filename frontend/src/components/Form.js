@@ -74,7 +74,7 @@ class Form extends Component {
                 <Button
                   id="submit"
                   onClick={this.handleSubmit.bind(this)}
-                >Create Rivet Page</Button>
+                >Submit</Button>
               </Col>
             </Row>
 

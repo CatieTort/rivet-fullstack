@@ -7,7 +7,7 @@ class Footer extends Component {
 
     return(
       <div className="footie">
-        <h3>Site by CAsh co. &trade;</h3>
+        <h5>Site by CAsh co. &trade;</h5>
       </div>
     )
   }
